@@ -1,0 +1,121 @@
+transaction_id,customer_id,product_category,amount,region,payment_mode,last_updated
+1001,501,Apparel,12233.16,Central,Credit Card,2025-02-07 00:00:00
+1002,502,Electronics,3035.28,Central,Net Banking,2025-01-14 00:00:00
+1003,503,Furniture,452.29,South,UPI,2024-09-24 00:00:00
+1004,504,Furniture,6153.8,South,Debit Card,2024-12-25 00:00:00
+1005,505,Grocery,6720.73,North,Credit Card,2024-06-07 00:00:00
+1006,506,Electronics,2872.47,South,Cash,2024-10-14 00:00:00
+1007,507,Apparel,1487.3,North,Net Banking,2024-05-22 00:00:00
+1008,508,Home Appliances,10815.29,South,Net Banking,2024-06-04 00:00:00
+1009,509,Home Appliances,3026.23,East,Cash,2025-01-10 00:00:00
+1010,510,Furniture,10957.98,South,Cash,2025-02-07 00:00:00
+1011,511,Home Appliances,4494.16,Central,Credit Card,2024-10-15 00:00:00
+1012,512,Apparel,11118.48,Central,Net Banking,2024-06-20 00:00:00
+1013,513,Grocery,12965.41,West,Credit Card,2024-08-28 00:00:00
+1014,514,Furniture,672.87,Central,Net Banking,2024-06-28 00:00:00
+1015,515,Electronics,6267.33,South,Net Banking,2024-12-22 00:00:00
+1016,516,Home Appliances,2137.27,North,Debit Card,2024-09-27 00:00:00
+1017,517,Furniture,16526.13,Central,UPI,2024-08-09 00:00:00
+1018,518,Electronics,16308.98,Central,Debit Card,2024-04-03 00:00:00
+1019,519,Apparel,10743.13,East,Cash,2024-03-25 00:00:00
+1020,520,Apparel,13332.97,North,UPI,2024-04-28 00:00:00
+1021,521,Grocery,14769.33,East,UPI,2024-03-04 00:00:00
+1022,522,Grocery,3357.79,West,Credit Card,2025-02-26 00:00:00
+1023,523,Grocery,9532.4,Central,Net Banking,2025-01-18 00:00:00
+1024,524,Furniture,4513.36,South,UPI,2024-09-06 00:00:00
+1025,525,Home Appliances,3173.09,East,Cash,2024-05-25 00:00:00
+1026,526,Apparel,12338.39,South,Net Banking,2024-12-13 00:00:00
+1027,527,Apparel,3363.12,North,Net Banking,2024-03-28 00:00:00
+1028,528,Furniture,7836.42,East,Credit Card,2024-08-18 00:00:00
+1029,529,Electronics,4966.12,West,UPI,2025-02-07 00:00:00
+1030,530,Grocery,10538.07,South,Credit Card,2024-09-02 00:00:00
+1031,531,Electronics,3349.51,South,UPI,2024-10-06 00:00:00
+1032,532,Grocery,9616.16,South,Cash,2024-10-28 00:00:00
+1033,533,Apparel,8157.89,North,Credit Card,2025-01-16 00:00:00
+1034,534,Home Appliances,3759.26,Central,Credit Card,2024-07-06 00:00:00
+1035,535,Grocery,8960.77,South,Debit Card,2025-01-25 00:00:00
+1036,536,Electronics,11693.88,Central,Net Banking,2025-01-11 00:00:00
+1037,537,Electronics,14175.78,Central,Cash,2024-06-24 00:00:00
+1038,538,Furniture,18067.35,North,Credit Card,2024-04-03 00:00:00
+1039,539,Apparel,15156.12,Central,Debit Card,2024-05-15 00:00:00
+1040,540,Apparel,4262.02,North,Cash,2024-03-16 00:00:00
+1041,541,Grocery,16518.51,Central,Credit Card,2024-09-17 00:00:00
+1042,542,Furniture,18030.85,East,Net Banking,2025-01-05 00:00:00
+1043,543,Apparel,1643.88,North,Net Banking,2025-02-23 00:00:00
+1044,544,Furniture,19487.01,Central,Debit Card,2024-11-08 00:00:00
+1045,545,Furniture,2383.42,Central,UPI,2024-06-17 00:00:00
+1046,546,Grocery,18481.89,Central,Cash,2024-09-20 00:00:00
+1047,547,Furniture,16886.24,North,Net Banking,2024-06-18 00:00:00
+1048,548,Furniture,6072.93,East,UPI,2024-11-27 00:00:00
+1049,549,Furniture,6522.61,East,Debit Card,2024-04-19 00:00:00
+1050,550,Home Appliances,12049.38,South,Debit Card,2024-09-30 00:00:00
+1051,551,Apparel,16013.12,East,Credit Card,2024-12-21 00:00:00
+1052,552,Home Appliances,10396.62,North,Credit Card,2024-10-09 00:00:00
+1053,553,Electronics,7319.74,West,Credit Card,2024-07-17 00:00:00
+1054,554,Home Appliances,18472.68,South,Net Banking,2024-12-12 00:00:00
+1055,555,Apparel,468.7,East,Cash,2024-07-28 00:00:00
+1056,556,Apparel,13589.43,West,Net Banking,2024-10-26 00:00:00
+1057,557,Grocery,617.31,West,Credit Card,2024-06-05 00:00:00
+1058,558,Apparel,4760.77,North,Net Banking,2024-11-15 00:00:00
+1059,559,Furniture,2325.71,South,UPI,2025-01-23 00:00:00
+1060,560,Home Appliances,15594.3,West,Credit Card,2024-05-25 00:00:00
+1061,561,Apparel,1908.2,East,Debit Card,2024-10-13 00:00:00
+1062,562,Apparel,10418.18,East,Credit Card,2024-05-05 00:00:00
+1063,563,Apparel,3477.29,West,Debit Card,2024-05-30 00:00:00
+1064,564,Home Appliances,15991.03,Central,Net Banking,2024-05-30 00:00:00
+1065,565,Home Appliances,11211.05,West,Cash,2024-05-05 00:00:00
+1066,566,Home Appliances,3822.27,Central,Net Banking,2024-03-16 00:00:00
+1067,567,Furniture,1900.11,West,Cash,2024-05-09 00:00:00
+1068,568,Home Appliances,16743.02,East,Debit Card,2024-11-14 00:00:00
+1069,569,Grocery,12844.96,West,Debit Card,2024-09-02 00:00:00
+1070,570,Home Appliances,8473.35,West,Net Banking,2024-10-21 00:00:00
+1071,571,Home Appliances,19007.79,Central,Cash,2024-03-11 00:00:00
+1072,572,Electronics,5353.97,North,Cash,2024-07-26 00:00:00
+1073,573,Apparel,13198.23,South,Net Banking,2024-04-01 00:00:00
+1074,574,Home Appliances,3283.16,West,Cash,2025-01-24 00:00:00
+1075,575,Grocery,19692.92,Central,Credit Card,2024-06-15 00:00:00
+1076,576,Electronics,3999.34,South,Debit Card,2024-03-16 00:00:00
+1077,577,Furniture,8509.06,North,UPI,2024-04-16 00:00:00
+1078,578,Apparel,1374.65,Central,Cash,2024-09-26 00:00:00
+1079,579,Home Appliances,16270.07,North,Credit Card,2024-08-12 00:00:00
+1080,580,Electronics,14686.06,North,Debit Card,2024-08-09 00:00:00
+1081,501,Grocery,17791.91,West,Net Banking,2025-01-20 00:00:00
+1082,502,Furniture,19856.08,North,Debit Card,2024-05-28 00:00:00
+1083,503,Apparel,18765.46,East,Credit Card,2025-02-09 00:00:00
+1084,504,Grocery,2058.57,South,UPI,2024-08-26 00:00:00
+1085,505,Electronics,15228.5,Central,Debit Card,2025-02-08 00:00:00
+1086,506,Apparel,5058.72,North,Debit Card,2024-06-10 00:00:00
+1087,507,Electronics,5648.18,South,Debit Card,2024-04-01 00:00:00
+1088,508,Home Appliances,16292.05,West,Debit Card,2024-04-30 00:00:00
+1089,509,Apparel,6485.23,West,UPI,2025-02-03 00:00:00
+1090,510,Furniture,881.9,North,Net Banking,2024-05-15 00:00:00
+1091,511,Home Appliances,15871.6,West,Cash,2024-07-08 00:00:00
+1092,512,Electronics,13544.8,South,Cash,2024-07-15 00:00:00
+1093,513,Furniture,9674.16,South,Net Banking,2024-12-27 00:00:00
+1094,514,Furniture,19971.73,South,Cash,2024-03-24 00:00:00
+1095,515,Grocery,472.61,West,Credit Card,2024-09-02 00:00:00
+1096,516,Electronics,9362.54,East,Debit Card,2024-09-22 00:00:00
+1097,517,Apparel,9470.56,West,Credit Card,2024-03-01 00:00:00
+1098,518,Electronics,8283.9,North,Debit Card,2024-10-29 00:00:00
+1099,519,Electronics,19227.42,North,UPI,2024-11-21 00:00:00
+1100,520,Grocery,19061.08,East,Cash,2024-10-20 00:00:00
+1101,521,Grocery,7015.25,South,Debit Card,2024-10-25 00:00:00
+1102,522,Furniture,13939.24,West,Debit Card,2024-05-02 00:00:00
+1103,523,Home Appliances,17008.77,East,Credit Card,2025-01-26 00:00:00
+1104,524,Electronics,8324.94,North,Debit Card,2024-06-25 00:00:00
+1105,525,Electronics,9584.06,South,Net Banking,2024-10-24 00:00:00
+1106,526,Apparel,3274.67,East,Credit Card,2024-08-03 00:00:00
+1107,527,Grocery,458.78,East,Debit Card,2024-07-04 00:00:00
+1108,528,Apparel,10671.21,Central,Net Banking,2025-01-08 00:00:00
+1109,529,Grocery,19979.77,West,Net Banking,2024-10-19 00:00:00
+1110,530,Furniture,441.4,East,Debit Card,2024-05-05 00:00:00
+1111,531,Home Appliances,19355.43,East,Debit Card,2024-07-19 00:00:00
+1112,532,Home Appliances,13569.96,East,Cash,2024-05-14 00:00:00
+1113,533,Furniture,16808.81,Central,Credit Card,2025-01-23 00:00:00
+1114,534,Electronics,11424.55,West,Net Banking,2025-01-16 00:00:00
+1115,535,Grocery,13507.03,North,Net Banking,2024-08-14 00:00:00
+1116,536,Apparel,5101.5,South,Net Banking,2024-08-20 00:00:00
+1117,537,Furniture,8556.47,South,Net Banking,2024-10-15 00:00:00
+1118,538,Home Appliances,4495.68,South,Cash,2024-07-18 00:00:00
+1119,539,Grocery,343.97,West,Cash,2024-06-20 00:00:00
+1120,540,Furniture,1889.27,Central,Net Banking,2024-03-16 00:00:00
