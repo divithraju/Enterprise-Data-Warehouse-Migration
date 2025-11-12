@@ -1,16 +1,70 @@
-# Enterprise Data Warehouse Migration (Sales Transactions)
+## Enterprise Data Warehouse Migration from Legacy Systems
 
-This project simulates migrating a legacy MySQL sales transactions table to a Hadoop data lake, transforming it with PySpark, and orchestrating weekly runs with Airflow.
+🚀 Overview
 
-Paths and credentials are configured in `config/pipeline_config.yaml` 
+This project demonstrates a real-world enterprise data migration from a legacy RDBMS-based warehouse (MySQL) to a modern Hadoop-based data lake, enabling scalable, cost-efficient, and faster data analytics.
 
-## Quickstart (for demo purposes)
-1. Place `data/input/sales_transactions.csv` where convenient.
-2. Create MySQL table using `mysql_scripts/create_sales_table.sql`
-3. Upload initial CSV to MySQL or use LOAD DATA LOCAL INFILE.
-4. Ensure Hadoop is running and HDFS paths exist (`hdfs dfs -mkdir -p /user/divithraju/hr_project/raw` etc.)
-5. Run Sqoop import: `bash sqoop_ingestion/sqoop_import_sales.sh`
-6. Run Spark ETL: `spark-submit spark_transform/sales_transform_job.py`
-7. Validate: `python3 validation/data_validation.py`
+The pipeline integrates Sqoop, Spark, Hive, and Airflow to simulate an end-to-end data warehouse modernization process — from ingestion to transformation, validation, and automation.
 
-The Airflow DAG `airflow_dags/weekly_sales_migration_dag.py` is configured to run weekly (Sunday 2 AM).
+## Architecture Diagram
+
+          +------------------+
+          |   MySQL Legacy   |
+          |   Database       |
+          +--------+---------+
+                   |
+              (Sqoop Import)
+                   |
+                   v
+        +----------+-----------+
+        |   Hadoop HDFS        |
+        |   (Raw Layer)        |
+        +----------+-----------+
+                   |
+              (Spark ETL)
+                   |
+                   v
+        +----------+-----------+
+        |   Hadoop HDFS        |
+        | (Processed/Parquet)  |
+        +----------+-----------+
+                   |
+              (Hive External Table)
+                   |
+                   v
+          +--------+---------+
+          |  BI / Analytics  |
+          +------------------+
+
+
+## Tech Stack
+
+| Layer         | Technology                 | Purpose                                        |
+| ------------- | -------------------------- | ---------------------------------------------- |
+| Storage       | **HDFS (Hadoop)**          | Distributed storage for raw and processed data |
+| Ingestion     | **Sqoop**                  | Transfers data from MySQL → HDFS               |
+| Processing    | **Apache Spark (PySpark)** | ETL transformation, cleaning, enrichment       |
+| Warehouse     | **Apache Hive**            | Query and analytical access layer              |
+| Orchestration | **Apache Airflow**         | Schedules and monitors weekly jobs             |
+| Source        | **MySQL**                  | Simulated legacy database system               |
+| Format        | **Parquet (Columnar)**     | Efficient storage for analytics                |
+
+## ETL Flow
+
+| Step             | Tool            | Description                                     |
+| ---------------- | --------------- | ----------------------------------------------- |
+| **1. Extract**   | Sqoop           | Imports data from MySQL → HDFS raw zone         |
+| **2. Transform** | Spark (PySpark) | Cleans, aggregates, and normalizes data         |
+| **3. Load**      | Hive            | Creates external Hive tables over Parquet files |
+| **4. Validate**  | Python          | Data quality checks (nulls, duplicates, schema) |
+| **5. Schedule**  | Airflow         | Weekly workflow orchestration and logging       |
+
+## Scheduling (Airflow DAG)
+
+DAG name: weekly_sales_migration
+
+Frequency: Weekly (every Sunday, 2 AM)
+
+Tasks:
+    start → sqoop_import → spark_transform → hive_load → validation → end
+
