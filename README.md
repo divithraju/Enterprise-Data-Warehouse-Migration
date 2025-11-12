@@ -2,39 +2,7 @@
 
 🚀 Overview
 
-This project demonstrates a real-world enterprise data migration from a legacy RDBMS-based warehouse (MySQL) to a modern Hadoop-based data lake, enabling scalable, cost-efficient, and faster data analytics.
-
-The pipeline integrates Sqoop, Spark, Hive, and Airflow to simulate an end-to-end data warehouse modernization process — from ingestion to transformation, validation, and automation.
-
-## Architecture Diagram
-
-          +------------------+
-          |   MySQL Legacy   |
-          |   Database       |
-          +--------+---------+
-                   |
-              (Sqoop Import)
-                   |
-                   v
-        +----------+-----------+
-        |   Hadoop HDFS        |
-        |   (Raw Layer)        |
-        +----------+-----------+
-                   |
-              (Spark ETL)
-                   |
-                   v
-        +----------+-----------+
-        |   Hadoop HDFS        |
-        | (Processed/Parquet)  |
-        +----------+-----------+
-                   |
-              (Hive External Table)
-                   |
-                   v
-          +--------+---------+
-          |  BI / Analytics  |
-          +------------------+
+This project demonstrates a real-world enterprise data migration from a legacy RDBMS-based warehouse (MySQL) to a modern Hadoop-based data lake, enabling scalable, cost-efficient, and faster data analytics. 
 
 
 ## Tech Stack
@@ -59,12 +27,5 @@ The pipeline integrates Sqoop, Spark, Hive, and Airflow to simulate an end-to-en
 | **4. Validate**  | Python          | Data quality checks (nulls, duplicates, schema) |
 | **5. Schedule**  | Airflow         | Weekly workflow orchestration and logging       |
 
-## Scheduling (Airflow DAG)
 
-DAG name: weekly_sales_migration
-
-Frequency: Weekly (every Sunday, 2 AM)
-
-Tasks:
-    start → sqoop_import → spark_transform → hive_load → validation → end
 
