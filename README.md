@@ -2,7 +2,7 @@
 
 This project simulates migrating a legacy MySQL sales transactions table to a Hadoop data lake, transforming it with PySpark, and orchestrating weekly runs with Airflow.
 
-Paths and credentials are configured in `config/pipeline_config.yaml` (do NOT commit secrets in public repos).
+Paths and credentials are configured in `config/pipeline_config.yaml` 
 
 ## Quickstart (for demo purposes)
 1. Place `data/input/sales_transactions.csv` where convenient.
